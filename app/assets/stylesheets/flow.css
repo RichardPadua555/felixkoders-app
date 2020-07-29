@@ -1,0 +1,102 @@
+.box-step .item {
+    width: 20%;
+    float: left;
+    position: relative;
+    margin: 0 2.5%;
+    padding-bottom: 60px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.box-step .item:after {
+    content: '';
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    right: -37%;
+    top: 0;
+    background: url('../images/step-arrow1.png') no-repeat;
+    background-size: cover;
+}
+
+.box-step .item:nth-child(3):after {
+    right: -47%;
+}
+
+
+.box-step .item:nth-child(odd):after {
+    background: url('../images/step-arrow2.png') no-repeat;
+    background-size: cover;
+}
+
+
+.box-step .item:last-child:after {
+    display: none;
+}
+.box-step .title {
+    text-align: center;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 9px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fbc028;
+}
+
+.box-step .icon {
+    text-align: center;
+}
+
+.box-step .icon img {
+    height: auto;
+    transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: -webkit-transform 0.5s;
+    -moz-transition: -moz-transform 0.5s;
+    -ms-transition: -moz-transform 0.5s;
+    -o-transition: -o-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.box-step .description {
+    text-align: center;
+    transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    margin-top: 23px;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4.sub-title {
+    text-align: center;
+    line-height: 23px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:  300;
+}
+
+.flow .box-header::after {
+    display: block;
+    content: "";
+    background: #f1b72b;
+    width: 30px;
+    height: 2px;
+    margin-top: 23px;
+}
+
+.flow h2.box-header::after {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}

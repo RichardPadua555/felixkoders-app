@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    
+    <title>Felixkoders</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,400i,500,500i,700" rel="stylesheet">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+    <!-- --------------------loader-------------------- -->
+
+    <div class="loading-box text-center">
+      <div class="loader loader-1 v-middle">
+          <div class="loader-outter"></div>
+          <div class="loader-inner"></div>
+        </div>
+    </div>
+
+<!-- ------------------headbar |header | navbar---------------------------- -->
+    <div class="head-bar"></div>
+
+    <header id="header-section" class="header-section cd-auto-hide-header clearfix">
+      <!-- header-middle - start -->
+      <div class="header-middle">
+        <div class="container">
+          <div class="row">
+            <!-- brand-logo-area - start -->
+            <div class="col-lg-3 col-sm-3 col-xs-3">
+              <div class="brand-logo-area">
+                 <%= link_to image_tag('logo.png') , root_path , class: 'brand-logo' , alt: 'Felix Logo' %>
+              </div>
+            </div>
+            <!-- brand-logo-area - end -->
+            <div class="col-lg-9 col-sm-9 col-xs-9">
+              <!-- contact-info - start -->
+              <div class="contact-info pull-right">
+                <ul class="">
+                   <li><%= link_to 'info@FelixKoders.ae' , 'mailto:info@zaiyna.ae' , class: 'fa fa-envelope'  %></li>
+                   <li><%= link_to '8009274  (Toll Free)' , 'tel:8009274' , class: 'fa fa-phone' %></li>
+                  </ul>
+              </div>
+              <!-- contact-info - end -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- header-middle - end -->
+      <!-- header-bottom - start -->
+      <div class="header-bottom" id="navbar">
+        <div class="container">
+          <!-- mainmenu - start -->
+          <div class="mainmenu clearfix">
+            
+          <nav class="navbar">
+              <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> 
+                </button>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                <li><%= link_to 'Home' , root_path , class: 'active' %></li>
+                <li><%= link_to 'About Us' , about_path %></li>
+                <li><%= link_to 'Our Services' , ourservices_path %></li>
+                <li><%= link_to 'Our Offers' , ouroffers_path  %></li>
+                <li><%= link_to 'Blog' , blog_path  %></li>
+                <li><%= link_to 'Contact Us' , contactus_path  %></li>
+                </ul>
+
+                  <div class="top-social pull-right">
+                <%= link_to '' , 'https://www.facebook.com/ZaiynaLaundry/' , class: 'fa fa-facebook' , target: '_blank' %>
+                <%= link_to '' , 'https://plus.google.com/+ZaiynaAe800WASH' , class: 'fa fa-google-plus' , target: '_blank' %>
+                <%= link_to '' , 'https://twitter.com/Laundry_JLT' , class: 'fa fa-twitter' , target: '_blank' %>
+                  </div>
+                </div>
+              </div>
+          </nav>
+            
+          </div>
+          <!-- mainmenu - end -->
+        </div>
+      </div>
+      <!-- header-bottom - end -->
+    </header>
+
+
+    <%= yield %>
+
+
+<!-- ----------------------map---------------------------- -->
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?q=zaiyna%20laundry%2C%20Armada%20Tower%203%2C%20Cluster%20P%2C%20Al%20Sarayat%20Street%20(North)%2C%20JLT%20-%20Jumeirah%20Lakes%20Towers%20-%20Dubai%20-%20United%20Arab%20Emirates&key=AIzaSyCXrCVI1CMxAZSoqqOw-Z-vR9tuKk9mCv8" height="350" style="border:0; width:100%;     padding:0px;margin-bottom: -6px;"></iframe>
+      </div>
+    </div>
+  </section>
+<!-- -----------------------footer-------------------- -->
+  
+  <footer class="footer-section">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div class="about-widget">
+              <%= image_tag('logo-white.png'  , class: 'margin-bottom-30' , alt: 'Footer Logo') %>
+              <p>Founded with a vision to be the Signature Laundry Services brand in the region, we strive to present our customers with most Outstanding form of satisfaction when it comes to our services from dry cleaning to steam pressing.<br>We ensure the promptness and punctuality of our pickup and delivery service. While focusing on Quality, Customer Satisfaction and Innovation, we also guarantee the Best Price in town. Our laundry service will save you time and money</p>
+              <div class="view-more">
+                <%= link_to 'Read More' , about_path , class: 'fa fa-angle-double-right' %>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12">
+            <h5 class="footer-title">Service Locations</h5>
+            <ul class="sitemap-widget">
+             <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry in Jumeirah Lake Towers (JLT)' ,'javascript:void(0)'  %> </li>
+              
+              <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Pressing in Jebel Ali Village' ,'javascript:void(0)'  %> </li>
+              <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Dry Cleaning in Dubai Investment Park (DIP)' ,'javascript:void(0)'  %> </li>
+
+              <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Pressing in Discovery Gardens' ,'javascript:void(0)'  %> </li>
+
+                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry Service in The Gardens' ,'javascript:void(0)'  %> </li>
+
+                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Jumeirah Village Circle (JVC)' ,'javascript:void(0)'  %> </li>
+
+                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Dry Cleaning in Dubai Marina' ,'javascript:void(0)'  %> </li>
+
+                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry in Jumeirah Beach' ,'javascript:void(0)'  %> </li>
+
+                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Pressing in Jumeirah Village ' ,'javascript:void(0)'  %> </li>
+
+                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry in Jumeirah Park' ,'javascript:void(0)'  %> </li>
+
+                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Dry Cleaning in Jumeirah Island' ,'javascript:void(0)'  %> </li>
+                
+                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Alteration in Barsha Heights' ,'javascript:void(0)'  %> </li>
+
+                 <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry in Dubai Sport City' ,'javascript:void(0)'  %> </li>
+
+                 <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Free Pick up and Delivery in Palm Jumeirah' ,'javascript:void(0)'  %> </li>                             
+              </ul>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <h5 class="footer-title">Reach Us, We are Open</h5>
+            <p>
+              <b>FelixKoders Laundry & Dry Cleaning</b> <br>
+              Shop No 3, Concourse Level <br>
+              Armada Tower 3, Cluster P <br>
+              JLT - Jumeirah Lakes Tower <br>
+              Dubai, United Arab Emirates <br><br>
+
+              Toll Free: <span class="orange-text">8009274</span> <br>
+              Mobile: <span class="orange-text">0521357033 </span> <br>
+              Phone: <span class="orange-text">045571060 </span> <br>
+              Email: <span class="orange-text">info@FelixKoders.ae </span> <br><br>
+
+              Sat to Thu: 9:30 AM - 10:30 PM <br>
+              Fri: 2:30 PM - 10:30 PM<br><br>
+            </p>
+            <div class="top-social">
+            <%= link_to '' , 'https://www.facebook.com/ZaiynaLaundry/' , class: 'fa fa-facebook' , target: '_blank' %>
+            <%= link_to '' , 'https://plus.google.com/+ZaiynaAe800WASH' , class: 'fa fa-google-plus' , target: '_blank' %>
+            <%= link_to '' , 'https://twitter.com/Laundry_JLT' , class: 'fa fa-twitter' , target: '_blank' %>
+            </div>
+          </div>
+        </div>
+                                                   
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+          <div class="copyright">
+            <p> © 2015 FelixKoders - Laundry & Dry Cleaning Services. Website Developed, Maintained & Hosted by <%= link_to 'Right Solutions' , 'https://rightsolutions.ae'  %></p>
+          </div>
+      </div>
+    </div>
+</footer>
+
+  </body>
+</html>

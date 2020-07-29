@@ -1,0 +1,40 @@
+.booknow-page-section.padding-top-60.padding-bottom-100 {
+    background-color: #efefef;
+}
+.contact-form input[type="text"], .contact-form input[type="email"],.contact-form select {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    height: 44px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    width: 100%;
+}
+.contact-form textarea#message {
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    height: 180px;
+    padding: 20px;
+    width: 100%;
+}
+.booknow-page-section .contact-btn {
+    background: #ffffff;
+    border: 2px solid #ee4d49;
+    color: #ee4d49;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 40px;
+    transition: 0.4s;
+    width: auto;
+    float: right;
+    text-transform: uppercase;
+    border-radius: 26px;
+    font-weight: 700;
+}
+.booknow-page-section .contact-btn:hover {
+    background:#ee312c;
+    border: 2px solid #ee312c ;
+    color: #ffffff;
+    transition: 0.4s;
+}
+

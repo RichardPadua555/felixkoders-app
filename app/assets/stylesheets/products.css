@@ -1,0 +1,64 @@
+.services-box {
+    text-align: center;
+    display: block;
+    position: relative;
+    font-size: 16px;
+    line-height: 23px;
+    padding: 52px 30px 30px 30px;
+    min-height: 339px;
+    margin-bottom: 30px;
+    outline:  1px solid #fff;
+    outline-offset: -8px;
+    min-height: 390px;
+}
+.fill-bg-2 .title {
+    color: #ee312c;
+}
+.fill-bg-1 {
+    background: #50154d;
+    color: #fff;
+}
+.fill-bg-2 {
+    background-color: #e2e2e2;
+}
+
+.fill-bg-3 {
+    background-color: #ee312c;
+    color: #fff;
+}
+.services-box .icon-box {
+    height: 125px;
+}
+.services-box .title{
+  margin-top: 12px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  padding-bottom: 5px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  /* font-family: 'Oswald', sans-serif; */
+}
+
+.services-box i[class*='icon'] {
+    font-size: 90px;
+    line-height: 90px;
+    position: absolute;
+    top: 54px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0.1deg);
+}
+
+.services-box .icon-box svg {
+    height: 100%;
+    fill: #fff;
+}
+
+.services-box .paragraph {
+    line-height: 22px;
+}

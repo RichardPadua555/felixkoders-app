@@ -1,0 +1,94 @@
+.contact-details {
+    display: block;
+    overflow: hidden;
+    background: #f5f5f5;
+    padding: 40px 30px;
+    margin-bottom: 40px;
+}
+.contact-head {
+    background: #f9f9f9;
+    padding: 10px 30px 30px;
+}
+.contact-head h3 {
+    margin-bottom: 20px;
+}
+.contact-inner a i {
+    color: #50154d;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.contact-inner a  {
+    color: #666;
+    font-size: 16px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+ .contact-inner span.address-space {
+    color: #666;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    padding-left: 35px;
+    display: block;
+    line-height: 27px;
+    margin-top: -7px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-head p {
+    font-size: 16px;
+    line-height: 25px;
+}
+.contact-form input[type="text"], .contact-form input[type="email"] {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    height: 44px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    width: 100%;
+}
+.contact-form textarea#message {
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    height: 180px;
+    padding: 20px;
+    width: 100%;
+}
+.contact-page .contact-btn {
+    background: #ffffff;
+    border: 2px solid #ee312c;
+    color: #ee312c;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 40px;
+    transition: 0.4s;
+    width: auto;
+    /* float: left; */
+    text-transform: uppercase;
+    border-radius: 26px;
+    font-weight: 700;
+}
+.contact-page .contact-btn:hover {
+    background:#ee312c;
+    border: 2px solid #ee312c ;
+    color: #ffffff;
+    transition: 0.4s;
+}
+
+.contact-page h2.box-header {
+    text-align: left;
+}
+.contact-page h2.box-header::after {
+    margin-left: initial;
+    margin-right: initial;
+}

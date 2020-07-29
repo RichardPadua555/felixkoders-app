@@ -1,0 +1,36 @@
+.services-location{
+    margin-top: 40px;
+}
+.services-location table.table.table-hover {
+    text-align:  center;
+    border: 1px solid #502d65;
+    font-family: 'Roboto', sans-serif;
+}
+
+.services-location table.table.table-hover thead {
+    background-color: #502d65;
+    color: #fabf27;
+    text-align:  center;
+    border: 0px;
+}
+
+.services-location table.table.table-hover tr td {
+    border: 1px solid #502d65;
+    font-size: 16px;
+}
+
+.services-location table.table.table-hover > thead > tr > th {
+    border-bottom: 0px;
+    font-weight: 300;
+    font-size: 18px;
+    text-align:  center;
+}
+
+.services-location .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #ffe6e6;
+}
+
+.service-loc-img{
+    outline: 1px solid #ee312c;
+    outline-offset: -6px;
+}

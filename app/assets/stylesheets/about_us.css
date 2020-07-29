@@ -1,0 +1,22 @@
+.about-section h2.box-header {
+    text-align: left;
+}
+.about-section h2.box-header::after {
+    margin-left: initial;
+    margin-right: initial;
+}
+
+
+/* fb style Start */
+
+/* .about-section ._2p3a {
+    width: 100% !important;
+}
+
+.about-section ._2l7q img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: initial !important;
+    max-height: initial !important;
+} */
+/* fb style End */

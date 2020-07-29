@@ -1,0 +1,97 @@
+
+
+		<div class="contact-page sec-spacer">
+	    <div class="container">
+	      <div class="row">
+					<div class="col-sm-12 margin-bottom-30">
+						<h2 class="box-header">Contact<span> Us</span></h2>
+					</div>
+				</div>
+	    	<div class="row">
+	          <div class="col-md-5 col-sm-12 col-xs-12">
+	              <div class="contact-head">
+	                  <h3>Zaiyna Laundry & Dry Cleaning</h3>
+	                  <p class="paragraph text-left">Call us or Book Online today, and see what our commitment to quality is all about! We may not be related, but you’ll feel like we’re family. We are here to make you feel good and look beautiful.</p>
+	                  <div class="contact-icon">
+						<div class="contact-inner">
+							<h5>Address :</h5>
+							<a href="javascript:void(0)"><i class="fa fa-map"></i><span>Shop No 3, Concourse Level</span></a>
+							<span class="address-space">Armada Tower 3, Cluster P <br>
+							JLT - Jumeirah Lakes Tower, <br>
+							Dubai, United Arab Emirates </span>
+							<a href="javascript:void(0)"><i class="fa fa-phone"></i><span>
+							Toll Free: 8009274</span></a>
+
+							<span class="address-space">Phone: 045571060 
+							</span>
+
+							<a href="javascript:void(0)"><i class="fa fa-whatsapp"></i><span>whatsapp: 0521357033</span></a>
+
+							<a href="javascript:void(0)"><i class="fa fa-envelope"></i><span>info@zaiyna.ae </span></a>
+							<%= link_to 'info@zaiyna.ae' , 'javascript:void(0)' , class: 'fa fa-envelope' %>
+						</div>
+					</div>
+	              </div>
+	          </div>
+	          <!-- End contact icon -->
+	        	<div class="col-md-7 col-sm-12 col-xs-12">
+	            <div class="contact-form">
+	                <div class="row">
+	                    <form id="contactForm" method="POST" action="" class="contact-form">
+	                        <div class="col-md-6 col-sm-6 col-xs-12">
+	                            <input type="text" class="form-control" placeholder="Name" required="" >
+	                        </div>
+	                        <div class="col-md-6 col-sm-6 col-xs-12">
+	                            <input type="email" class="email form-control"  placeholder="Email" required="">
+	                        </div>
+	                        <div class="col-md-6 col-sm-6 col-xs-12">
+	                            <input type="text" class="form-control" placeholder="Phone / Mobile *" required="">
+	                        </div>
+
+	                        <div class="col-md-6 col-sm-6 col-xs-12">
+	                            <input type="text" class="form-control" placeholder="Subject" required="">
+	                        </div>
+
+	                        
+							<div class="col-md-12 col-sm-12 col-xs-12">
+	                            <textarea rows="7" placeholder="Special Notice" class="form-control"></textarea>
+	                        </div>
+	                        <div class="col-md-12 col-sm-12 col-xs-12 text-right">
+	                            <button type="submit" id="submit" class="contact-btn">Submit</button>
+	                            <div class="clearfix"></div>
+	                        </div>   
+	                    </form>  
+	                </div>
+	            </div>
+	        	</div>
+	        <!-- End contact Form -->
+	    	</div>
+	  	</div>
+    </div>
+
+	<script type="text/javascript">
+    $(document).ready(function(){
+
+         setTimeout(function(){        
+            $('.loading-box').fadeOut();
+            $('.loading-box').delay(100).fadeOut('slow');
+         }, 2000);
+
+      });
+
+
+  </script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
