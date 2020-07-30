@@ -15,6 +15,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,400i,500,500i,700" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -44,7 +46,7 @@
             <!-- brand-logo-area - start -->
             <div class="col-lg-3 col-sm-3 col-xs-3">
               <div class="brand-logo-area">
-                 <%= link_to image_tag('logo.png') , root_path , class: 'brand-logo' , alt: 'Felix Logo' %>
+                 <%= link_to image_tag('amazon.png') , root_path , class: 'brand-logo' , alt: 'Felix Logo' %>
               </div>
             </div>
             <!-- brand-logo-area - end -->
@@ -52,8 +54,15 @@
               <!-- contact-info - start -->
               <div class="contact-info pull-right">
                 <ul class="">
-                   <li><%= link_to 'info@FelixKoders.ae' , 'mailto:info@zaiyna.ae' , class: 'fa fa-envelope'  %></li>
-                   <li><%= link_to '8009274  (Toll Free)' , 'tel:8009274' , class: 'fa fa-phone' %></li>
+                   <li><%= link_to 'mailto:info@zaiyna.ae' do %>
+                       <span class="fa fa-envelope"> info@FelixKoders.ae</span>
+                       <% end %>
+                   </li>
+
+                   <li><%= link_to 'tel:8009274' do %>
+                     <span class="fa fa-phone"> 8009274  (Toll Free)</span>
+                       <% end %>
+                   </li>
                   </ul>
               </div>
               <!-- contact-info - end -->
@@ -135,32 +144,32 @@
           <div class="col-lg-5 col-md-12">
             <h5 class="footer-title">Service Locations</h5>
             <ul class="sitemap-widget">
-             <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry in Jumeirah Lake Towers (JLT)' ,'javascript:void(0)'  %> </li>
+             <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry in Jumeirah Lake Towers (JLT)' ,'javascript:void(0)'  %> </li>
               
-              <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Pressing in Jebel Ali Village' ,'javascript:void(0)'  %> </li>
-              <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Dry Cleaning in Dubai Investment Park (DIP)' ,'javascript:void(0)'  %> </li>
+              <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Pressing in Jebel Ali Village' ,'javascript:void(0)'  %> </li>
+              <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Dry Cleaning in Dubai Investment Park (DIP)' ,'javascript:void(0)'  %> </li>
 
-              <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Pressing in Discovery Gardens' ,'javascript:void(0)'  %> </li>
+              <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Pressing in Discovery Gardens' ,'javascript:void(0)'  %> </li>
 
-                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry Service in The Gardens' ,'javascript:void(0)'  %> </li>
+                <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry Service in The Gardens' ,'javascript:void(0)'  %> </li>
 
-                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Jumeirah Village Circle (JVC)' ,'javascript:void(0)'  %> </li>
+                <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Jumeirah Village Circle (JVC)' ,'javascript:void(0)'  %> </li>
 
-                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Dry Cleaning in Dubai Marina' ,'javascript:void(0)'  %> </li>
+                <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Dry Cleaning in Dubai Marina' ,'javascript:void(0)'  %> </li>
 
-                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry in Jumeirah Beach' ,'javascript:void(0)'  %> </li>
+                <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry in Jumeirah Beach' ,'javascript:void(0)'  %> </li>
 
-                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Pressing in Jumeirah Village ' ,'javascript:void(0)'  %> </li>
+                <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Pressing in Jumeirah Village ' ,'javascript:void(0)'  %> </li>
 
-                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry in Jumeirah Park' ,'javascript:void(0)'  %> </li>
+                <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry in Jumeirah Park' ,'javascript:void(0)'  %> </li>
 
-                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Dry Cleaning in Jumeirah Island' ,'javascript:void(0)'  %> </li>
+                <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Dry Cleaning in Jumeirah Island' ,'javascript:void(0)'  %> </li>
                 
-                <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Alteration in Barsha Heights' ,'javascript:void(0)'  %> </li>
+                <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Alteration in Barsha Heights' ,'javascript:void(0)'  %> </li>
 
-                 <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry in Dubai Sport City' ,'javascript:void(0)'  %> </li>
+                 <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Laundry in Dubai Sport City' ,'javascript:void(0)'  %> </li>
 
-                 <li><i class="a fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Free Pick up and Delivery in Palm Jumeirah' ,'javascript:void(0)'  %> </li>                             
+                 <li><i class="fa fa-angle-double-right" ria-hidden="true"></i> <%= link_to 'Free Pick up and Delivery in Palm Jumeirah' ,'javascript:void(0)'  %> </li>                             
               </ul>
           </div>
           <div class="col-lg-3 col-md-12">

@@ -15,20 +15,33 @@
 	                  <div class="contact-icon">
 						<div class="contact-inner">
 							<h5>Address :</h5>
-							<a href="javascript:void(0)"><i class="fa fa-map"></i><span>Shop No 3, Concourse Level</span></a>
+                            <%= link_to 'javascript:void(0)' do %>
+                            <i class="fa fa-map"></i>
+                            <span>Shop No 3, Concourse Level</span>
+                            <% end %>
+
 							<span class="address-space">Armada Tower 3, Cluster P <br>
 							JLT - Jumeirah Lakes Tower, <br>
 							Dubai, United Arab Emirates </span>
-							<a href="javascript:void(0)"><i class="fa fa-phone"></i><span>
-							Toll Free: 8009274</span></a>
+
+
+							<%= link_to 'javascript:void(0)' do %>
+							   <i class="fa fa-phone"> </i>
+							   <span>Toll Free: 8009274</span>
+							<% end %>   
 
 							<span class="address-space">Phone: 045571060 
 							</span>
 
-							<a href="javascript:void(0)"><i class="fa fa-whatsapp"></i><span>whatsapp: 0521357033</span></a>
+							<%= link_to  'javascript:void(0)' do %>
+							  <i class='fa fa-whatsapp'></i>
+							  <span>whatsapp: 0521357033</span>
+							  <% end %>
 
-							<a href="javascript:void(0)"><i class="fa fa-envelope"></i><span>info@zaiyna.ae </span></a>
-							<%= link_to 'info@zaiyna.ae' , 'javascript:void(0)' , class: 'fa fa-envelope' %>
+							<%= link_to  'javascript:void(0)' do %>
+							  <i class='fa fa-envelope'></i>
+							  <span>info@zaiyna.ae</span>
+							  <% end %>
 						</div>
 					</div>
 	              </div>
